@@ -1,0 +1,14 @@
+{
+    "name": "ht-login",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+    },
+    "scripts": {
+      "build-css": "sass --watch --no-source-map ./scss/index.scss:./assets/css/index.css"
+      },
+    "author": "",
+    "license": "ISC"
+  }
+  
