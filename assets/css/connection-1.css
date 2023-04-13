@@ -13,7 +13,7 @@ body {
 }
 
 .bg-shape {
-  height: 300px;
+  height: 150px;
   width: 100vw;
   background: #82D0FB;
   border-radius: 0 0 100px 100px;
@@ -24,12 +24,14 @@ body {
 }
 
 main {
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 2.5rem;
   position: absolute;
-  top: calc(300px - 4rem);
+  top: calc(150px - 4rem);
+  padding-bottom: 5rem;
 }
 main .logos {
   display: flex;
@@ -61,29 +63,47 @@ main .logos__logo-2 {
 main .logos__logo-2 img {
   width: 100%;
 }
-main .logos h2 {
-  font-size: 1rem;
-  font-weight: 500;
-  margin-top: 0.4rem;
-}
-main .actions {
+main .verification-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  gap: 1rem;
+  background: #F8F8F8;
+  border-radius: 20px;
+  padding: 1rem 0;
+  width: 90%;
 }
-main .actions a {
+main .verification-container p {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #2C3942;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+main .verification-container input {
+  width: 200px;
+  border: solid 1px #A3A3A3;
+  border-radius: 100vh;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+}
+main .verification-container input::placeholder {
+  font-weight: 600;
+  color: #d0d0d0;
+}
+main .verification-container input:focus {
+  outline: solid 2px #82D0FB;
+  border: solid 1px transparent;
+}
+main .verification-container__submitBtn {
+  width: 150px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
   text-align: center;
   padding: 0.5rem 1rem;
   border-radius: 100vh;
-}
-main .actions__first-connec {
   background: #82D0FB;
   color: white;
-}
-main .actions__connec {
-  border: solid 1px #2C3942;
-  color: black;
 }

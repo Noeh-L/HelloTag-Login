@@ -1,0 +1,176 @@
+@import 'variables.scss';
+
+* {
+    font-family: $main-font, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-shape {
+    height: $shape-height_small;
+    width: 100vw;
+    background: $light-blue;
+    border-radius: 0 0 100px 100px;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+}
+
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    position: absolute;
+    top: calc($shape-height_small - $logo1-height/2);
+    padding-bottom: 5rem;
+
+    .logos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__logo-1 {
+            background: white;
+            width: $logo1-height;
+            aspect-ratio: 1;
+            overflow: hidden;
+            border-radius: 50%;
+            @include centerDiv;
+            border: solid 3px $light-blue;
+    
+            img {
+                width: 80%;
+                height: 80%;
+            }
+        }
+
+        &__logo-2 {
+            width: 15rem;
+            @include centerDiv;
+            margin-top: 1rem;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+    
+    .progress {
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        display: flex;
+        gap: 7rem;
+
+        &__verif {
+            @include centerDiv;
+            flex-direction: column;
+            gap: 0.4rem;
+
+            &--step {
+                background: $light-blue;
+                width: 1.5rem;
+                height: 1.5rem;
+                padding: 0.3rem;
+                border-radius: 50%;
+                @include centerDiv;
+                color: white;
+                font-weight: 500;
+                font-size: 1.2rem;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    height: 1.5px;
+                    width: 69px;
+                    background: $light-blue;
+                    position: absolute;
+                    left: 98%;
+                }
+            }
+            &--txt {
+                color: $light-blue;
+                font-weight: 600;
+            }
+        }
+
+        &__scan {
+            @include centerDiv;
+            flex-direction: column;
+            gap: 0.4rem;
+
+            &--step {
+                background: $light-blue;
+                width: 1.5rem;
+                height: 1.5rem;
+                padding: 0.3rem;
+                border-radius: 50%;
+                @include centerDiv;
+                color: white;
+                font-weight: 500;
+                font-size: 1.2rem;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    height: 1.5px;
+                    width: 69px;
+                    background: $light-blue;
+                    position: absolute;
+                    right: 98%;
+                }
+            }
+            &--txt {
+                color: $light-blue;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .scan-container {
+        @include centerDiv;
+        flex-direction: column;
+        background: $light-gray;
+        border-radius: 20px;
+        padding: 1rem 0;
+        width: 90%;
+
+        h1 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: $marine-blue;
+            text-transform: uppercase;
+            margin-bottom: 0.8rem;
+        }
+        p {
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: $marine-blue;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+
+        &__camera-placeholder {
+            width: 180px;
+            height: 180px;
+            background: white;
+            @include centerDiv;
+            border-radius: 20px;
+            border: solid 1px #d0d0d0;
+
+            i {
+                color: $dark-gray;
+                font-size: 5rem;
+            }
+        }
+    }
+}

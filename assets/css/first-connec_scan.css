@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg-shape {
+  height: 150px;
+  width: 100vw;
+  background: #82D0FB;
+  border-radius: 0 0 100px 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.5rem;
+  position: absolute;
+  top: calc(150px - 4rem);
+  padding-bottom: 5rem;
+}
+main .logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .logos__logo-1 {
+  background: white;
+  width: 8rem;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 3px #82D0FB;
+}
+main .logos__logo-1 img {
+  width: 80%;
+  height: 80%;
+}
+main .logos__logo-2 {
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+main .logos__logo-2 img {
+  width: 100%;
+}
+main .progress {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  display: flex;
+  gap: 7rem;
+}
+main .progress__verif {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+main .progress__verif--step {
+  background: #82D0FB;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  position: relative;
+}
+main .progress__verif--step::after {
+  content: "";
+  height: 1.5px;
+  width: 69px;
+  background: #82D0FB;
+  position: absolute;
+  left: 98%;
+}
+main .progress__verif--txt {
+  color: #82D0FB;
+  font-weight: 600;
+}
+main .progress__scan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+main .progress__scan--step {
+  background: #82D0FB;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  position: relative;
+}
+main .progress__scan--step::after {
+  content: "";
+  height: 1.5px;
+  width: 69px;
+  background: #82D0FB;
+  position: absolute;
+  right: 98%;
+}
+main .progress__scan--txt {
+  color: #82D0FB;
+  font-weight: 600;
+}
+main .scan-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #F8F8F8;
+  border-radius: 20px;
+  padding: 1rem 0;
+  width: 90%;
+}
+main .scan-container h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2C3942;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+main .scan-container p {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #2C3942;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+main .scan-container__camera-placeholder {
+  width: 180px;
+  height: 180px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: solid 1px #d0d0d0;
+}
+main .scan-container__camera-placeholder i {
+  color: #A3A3A3;
+  font-size: 5rem;
+}

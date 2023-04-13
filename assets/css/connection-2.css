@@ -13,7 +13,7 @@ body {
 }
 
 .bg-shape {
-  height: 300px;
+  height: 150px;
   width: 100vw;
   background: #82D0FB;
   border-radius: 0 0 100px 100px;
@@ -24,12 +24,14 @@ body {
 }
 
 main {
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 2.5rem;
   position: absolute;
-  top: calc(300px - 4rem);
+  top: calc(150px - 4rem);
+  padding-bottom: 5rem;
 }
 main .logos {
   display: flex;
@@ -66,24 +68,67 @@ main .logos h2 {
   font-weight: 500;
   margin-top: 0.4rem;
 }
-main .actions {
+main .login {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  gap: 1rem;
+  position: relative;
 }
-main .actions a {
+main .login-input {
+  position: relative;
+}
+main .login-input i {
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  transform: translate(-50%, -50%);
+  color: #A3A3A3;
+}
+main .login-input input[type=text] {
+  width: 200px;
+  border: solid 1px #A3A3A3;
+  border-radius: 100vh;
+  padding: 0.5rem 1rem 0.5rem 3rem;
+}
+main .login-input input[type=text]::placeholder {
+  font-weight: 600;
+  color: #d0d0d0;
+}
+main .login-input input[type=text]:focus {
+  outline: solid 2px #82D0FB;
+  border: solid 1px transparent;
+}
+main .login-input.login__email {
+  margin-bottom: 1rem;
+}
+main .login-input.login__password {
+  margin-bottom: 0.5rem;
+}
+main .login__forgotPassword {
+  text-decoration: none;
+  color: #82D0FB;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 2.5rem;
+}
+main .login__enterBtn {
+  border: none;
+  width: 150px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
   text-align: center;
   padding: 0.5rem 1rem;
   border-radius: 100vh;
-}
-main .actions__first-connec {
   background: #82D0FB;
   color: white;
 }
-main .actions__connec {
-  border: solid 1px #2C3942;
-  color: black;
+main .login::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background: #c4c4c4;
+  position: absolute;
+  bottom: -2rem;
 }

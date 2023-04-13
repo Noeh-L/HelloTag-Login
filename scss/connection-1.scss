@@ -14,7 +14,7 @@ body {
 }
 
 .bg-shape {
-    height: $shape-height_big;
+    height: $shape-height_small;
     width: 100vw;
     background: $light-blue;
     border-radius: 0 0 100px 100px;
@@ -24,12 +24,14 @@ body {
 }
 
 main {
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 2.5rem;
     position: absolute;
-    top: calc($shape-height_big - $logo1-height/2);
+    top: calc($shape-height_small - $logo1-height/2);
+    padding-bottom: 5rem;
 
     .logos {
         display: flex;
@@ -60,36 +62,52 @@ main {
                 width: 100%;
             }
         }
-
-        h2 {
-            font-size: 1rem;
-            font-weight: 500;
-            margin-top: 0.4rem;
-        }
     }
-    
-    .actions {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
 
-        a {
+    .verification-container {
+        @include centerDiv;
+        flex-direction: column;
+        background: $light-gray;
+        border-radius: 20px;
+        padding: 1rem 0;
+        width: 90%;
+
+        p {
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: $marine-blue;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        input {
+            width: 200px;
+            border: solid 1px $dark-gray;
+            border-radius: 100vh;
+            padding: 0.5rem 1rem;
+            margin-bottom: 2rem;
+            
+            &::placeholder {
+                font-weight: 600;
+                color: #d0d0d0;
+            }
+            &:focus {
+                outline: solid 2px $light-blue;
+                border: solid 1px transparent;
+            }
+        }
+
+        &__submitBtn {
+            width: 150px;
             text-decoration: none;
             text-transform: uppercase;
             font-weight: 500;
             text-align: center;
             padding: 0.5rem 1rem;
             border-radius: 100vh;
-        }
-
-        &__first-connec {
             background: $light-blue;
             color: white;
-        }
-
-        &__connec {
-            border: solid 1px $marine-blue;
-            color: black;
         }
     }
 }

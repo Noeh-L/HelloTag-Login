@@ -6,7 +6,7 @@
     "directories": {
     },
     "scripts": {
-      "build-css": "sass --watch --no-source-map ./scss/index.scss:./assets/css/index.css"
+      "build-css": "sass --watch --no-source-map ./scss/index.scss:./assets/css/index.css ./scss/connection-1.scss:./assets/css/connection-1.css ./scss/connection-2.scss:./assets/css/connection-2.css ./scss/first-connec_verif.scss:./assets/css/first-connec_verif.css ./scss/first-connec_scan.scss:./assets/css/first-connec_scan.css"
       },
     "author": "",
     "license": "ISC"
