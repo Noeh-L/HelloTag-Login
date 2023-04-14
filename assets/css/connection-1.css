@@ -74,6 +74,11 @@ main .verification-container {
   padding: 1rem 0;
   width: 90%;
 }
+@media screen and (min-width: 768px) {
+  main .verification-container {
+    width: 50%;
+  }
+}
 main .verification-container p {
   font-size: 0.85rem;
   font-weight: 400;
@@ -83,7 +88,7 @@ main .verification-container p {
   margin-bottom: 2rem;
 }
 main .verification-container input {
-  width: 200px;
+  width: 250px;
   border: solid 1px #A3A3A3;
   border-radius: 100vh;
   padding: 0.5rem 1rem;

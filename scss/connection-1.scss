@@ -73,6 +73,10 @@ main {
         padding: 1rem 0;
         width: 90%;
 
+        @media screen and (min-width: 768px) {
+            width: 50%;
+        }
+
         p {
             font-size: 0.85rem;
             font-weight: 400;
@@ -83,7 +87,7 @@ main {
         }
 
         input {
-            width: 200px;
+            width: 250px;
             border: solid 1px $dark-gray;
             border-radius: 100vh;
             padding: 0.5rem 1rem;
