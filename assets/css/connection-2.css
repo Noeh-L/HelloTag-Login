@@ -74,6 +74,7 @@ main .login {
   justify-content: center;
   flex-direction: column;
   position: relative;
+  padding-bottom: 2.5rem;
 }
 main .login-input {
   position: relative;
@@ -123,6 +124,7 @@ main .login__enterBtn {
   border-radius: 100vh;
   background: #82D0FB;
   color: white;
+  cursor: pointer;
 }
 main .login::after {
   content: "";
@@ -130,5 +132,35 @@ main .login::after {
   height: 1px;
   background: #c4c4c4;
   position: absolute;
-  bottom: -2rem;
+  bottom: 0rem;
+}
+main .otherWay {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .otherWay_btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 100vh;
+  border: solid 1px #2C3942;
+  color: black;
+}
+main .otherWay__google {
+  display: flex;
+}
+main .otherWay__google i {
+  font-size: 1.4rem;
+  margin-right: 0.8rem;
+}
+main .otherWay__createAccount {
+  display: flex;
+}
+main .otherWay__createAccount img {
+  width: 1.5rem;
+  aspect-ratio: 1/1;
+  margin-right: 0.6rem;
 }
