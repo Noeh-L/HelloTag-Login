@@ -4,6 +4,7 @@
     font-family: $main-font, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 
 .bg-shape {
     height: $shape-height_small;
-    width: 100vw;
+    width: 100%;
     background: $light-blue;
     border-radius: 0 0 100px 100px;
     position: absolute;
@@ -151,12 +152,22 @@ main {
         &_btn { // il s'agit des 2 boutons sous "Se connecter"
             text-decoration: none;
             text-transform: uppercase;
+            font-size: 0.9rem;
             font-weight: 500;
-            text-align: center;
             padding: 0.5rem;
             border-radius: 100vh;
             border: solid 1px $marine-blue;
             color: black;
+            overflow: hidden;
+            display: flex;
+            max-width: 100%;
+
+            p {
+                flex: 1;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
         }
 
         &__google {

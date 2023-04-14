@@ -3,6 +3,7 @@
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 
 .bg-shape {
   height: 150px;
-  width: 100vw;
+  width: 100%;
   background: #82D0FB;
   border-radius: 0 0 100px 100px;
   position: absolute;

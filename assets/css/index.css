@@ -10,11 +10,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .bg-shape {
   height: 300px;
-  width: 100vw;
+  width: 100%;
   background: #82D0FB;
   border-radius: 0 0 100px 100px;
   position: absolute;

@@ -3,6 +3,7 @@
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 
 .bg-shape {
   height: 150px;
-  width: 100vw;
+  width: 100%;
   background: #82D0FB;
   border-radius: 0 0 100px 100px;
   position: absolute;
@@ -142,12 +143,21 @@ main .otherWay {
 main .otherWay_btn {
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 0.9rem;
   font-weight: 500;
-  text-align: center;
   padding: 0.5rem;
   border-radius: 100vh;
   border: solid 1px #2C3942;
   color: black;
+  overflow: hidden;
+  display: flex;
+  max-width: 100%;
+}
+main .otherWay_btn p {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 main .otherWay__google {
   display: flex;

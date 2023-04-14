@@ -4,6 +4,7 @@
     font-family: $main-font, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 
 .bg-shape {
     height: $shape-height_small;
-    width: 100vw;
+    width: 100%;
     background: $light-blue;
     border-radius: 0 0 100px 100px;
     position: absolute;
@@ -80,7 +81,7 @@ main {
                 background: $light-blue;
                 width: 1.5rem;
                 height: 1.5rem;
-                padding: 0.3rem;
+                padding: 1rem;
                 border-radius: 50%;
                 @include centerDiv;
                 color: white;
@@ -91,7 +92,7 @@ main {
                 &::after {
                     content: '';
                     height: 1.5px;
-                    width: 69px;
+                    width: 70px;
                     background: $light-blue;
                     position: absolute;
                     left: 98%;
@@ -112,7 +113,7 @@ main {
                 background: $light-blue;
                 width: 1.5rem;
                 height: 1.5rem;
-                padding: 0.3rem;
+                padding: 1rem;
                 border-radius: 50%;
                 @include centerDiv;
                 color: white;
@@ -123,7 +124,7 @@ main {
                 &::after {
                     content: '';
                     height: 1.5px;
-                    width: 69px;
+                    width: 70px;
                     background: $light-blue;
                     position: absolute;
                     right: 98%;
