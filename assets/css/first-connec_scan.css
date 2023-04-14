@@ -146,6 +146,11 @@ main .scan-container {
   padding: 1rem 0;
   width: 90%;
 }
+@media screen and (min-width: 768px) {
+  main .scan-container {
+    width: 50%;
+  }
+}
 main .scan-container h1 {
   font-size: 1.2rem;
   font-weight: 600;

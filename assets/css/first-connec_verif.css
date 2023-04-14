@@ -146,6 +146,11 @@ main .verification-container {
   padding: 1rem 0;
   width: 90%;
 }
+@media screen and (min-width: 768px) {
+  main .verification-container {
+    width: 50%;
+  }
+}
 main .verification-container h1 {
   font-size: 1.2rem;
   font-weight: 600;
